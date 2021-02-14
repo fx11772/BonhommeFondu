@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Le bonhomme fondu</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src = "script.js"></script>
+</head>
+<body onload="nouvellePartie()">
+    <div id="Principal">
+        <header>
+            <h1 id="Titre"><b><i>Le bonhomme fondu</i></b></h1>
+        </header>
+        <section id="imageResultat">
+            <article>
+                <img id="image">
+            </article>
+            <aside>
+                <p id="nbrLettres"></p>
+                <label for="lettre">Quel lettre désirez-vous chercher ?</label>
+                <input type="text" id="lettre" autofocus>
+                <input id="chercherLettre" type="button" value="Chercher" onclick="verifierLettreRecherchee()">
+                <p id="resultat"></p>
+                <p id="utilise"></p>
+                <p id="message"></p>
+                <input id="nouvellePartie" type="button" value="Nouvelle partie" onclick="nouvellePartie()">
+            </aside>
+        </section>
+            
+    </div>
+</body>
+</html>
